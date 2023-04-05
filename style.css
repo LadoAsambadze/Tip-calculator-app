@@ -133,6 +133,7 @@ body {
   text-align: right;
   color: #00474b;
   margin-top: 6px;
+  border: none;
 }
 
 .tip-answer {

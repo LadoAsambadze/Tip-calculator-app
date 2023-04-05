@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Space+Mono:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 50px;
+  background-color: #c5e4e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+}
+.splitter {
+  width: 86px;
+  height: 53px;
+}
+.tip-section {
+  width: 100%;
+  padding: 32px;
+  background-color: white;
+  box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+  border-radius: 25px 25px 0px 0px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bill {
+  font-size: 16px;
+  line-height: 24px;
+  color: #5e7a7d;
+  text-align: left;
+}
+
+.write-number {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 6px;
+  background-color: #f3f9fa;
+  border: none;
+  background-image: url(./images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: left 19px top 10px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: right;
+  color: #00474b;
+  padding-left: 30px;
+}
+.select-tip {
+  margin-top: 32px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5e7a7d;
+}
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 16px;
+  column-gap: 16px;
+  margin-top: 16px;
+}
+
+.percent {
+  text-align: center;
+  background-color: #00474b;
+  border-radius: 5px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.input-percent {
+  width: 100%;
+  background-color: #f3f9fa;
+  border-radius: 5px;
+  border: none;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: right;
+  color: #547878;
+  text-align: center;
+}
+
+.active {
+  background-color: #26c2ae;
+}
+.try {
+  background-color: #f3f9fa;
+}
+.number-people {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5e7a7d;
+  margin-top: 40px;
+}
+.people-input {
+  width: 100%;
+  background-color: #f3f9fa;
+  border-radius: 5px;
+  background-image: url(./images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: left 17px top 10px;
+  border: 2px solid black;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: right;
+  color: #00474b;
+  margin-top: 6px;
+}
+
+.tip-answer {
+  width: 100%;
+  background-color: #00474b;
+  border-radius: 15px;
+  padding: 39px 22px 24px 24px;
+  margin-top: 32px;
+}
+.answer-per-person {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.tip-amount-person {
+  display: flex;
+  flex-direction: column;
+}
+.tip-amount {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.divide {
+  font-size: 13px;
+  line-height: 19px;
+  color: #7f9d9f;
+}
+
+.final-person-answer {
+  font-size: 32px;
+  line-height: 47px;
+  text-align: right;
+  letter-spacing: -0.666667px;
+  color: #26c2ae;
+}
+.final {
+  font-size: 32px;
+  line-height: 47px;
+  text-align: right;
+  letter-spacing: -0.666667px;
+  color: #26c2ae;
+}
+.second-answer {
+  margin-top: 21px;
+}
+.reset {
+  width: 100%;
+  background-color: #26c2ae;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 9px 32px 9px 32px;
+  margin-top: 33px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #00474b;
+}
+.error {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 24px;
+  color: #5e7a7d;
+  margin-top: 40px;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    padding: 163px 260px 240px 260px;
+  }
+  .tip-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 48px;
+    padding: 32px 32px 32px 48px;
+  }
+  .number-people {
+    margin-top: 40px;
+  }
+  .second-answer {
+    margin-top: 25px;
+  }
+  .reset {
+    margin-top: 110px;
+  }
+  .tip-answer {
+    padding: 40px;
+    margin: 0;
+  }
+  .reset:hover {
+    background-color: #9fe8df;
+  }
+}
